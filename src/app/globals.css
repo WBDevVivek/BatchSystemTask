@@ -1,4 +1,3 @@
-
 /* @import url('clash-display.css'); */
 @import url('./fonts/ClashDisplay_Complete/Fonts/WEB/css/clash-display.css');
 
@@ -15,7 +14,8 @@
 
 @layer base {
   :root {
-    --background: #414141;
+    /* --background: #414141; */
+    --background: #FFFFFF;
     --backGradiYellow: #FDE598;
     --backGradiRed: #FF0000;
     --iconColor: #FF5555;
@@ -29,6 +29,8 @@
     --ClashDisplaySemibold: ClashDisplay-Semibold;
     --ClashDisplayBold: ClashDisplay-Bold;
     --ClashDisplayVariable: ClashDisplay-Variable;
+
+    --backSoftLightImg: "url(https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2FforBack%2FsoftLightBack.png?alt=media&token=8332c707-9a62-4eb8-badd-21226ef30162)"
 
   }
 
@@ -58,15 +60,21 @@
 
 @layer components {
   .btnClass {
-    @apply flex justify-center items-center p-2 lg:p-4 w-[100px]  sm:w-[140px] h-full rounded-[5px] gap-2
+    @apply flex justify-center items-center p-2 lg:p-4 w-[100px] sm:w-[140px] h-full rounded-[5px] gap-2
   }
+
   .borderClass {
     /* @apply border-2 border-red-800 */
   }
+
   .pinkBorderClass {
     /* @apply border-4 border-pink-700 */
   }
 }
+
+
+
+
 
 
 
@@ -93,6 +101,16 @@ svg {
   fill: inherit;
   stroke: inherit;
 }
+
+
+
+
+
+
+.backBackground {
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2FforBack%2FsoftLightBack.png?alt=media&token=8332c707-9a62-4eb8-badd-21226ef30162);
+}
+
 
 
 
