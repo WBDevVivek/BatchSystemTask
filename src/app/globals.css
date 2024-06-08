@@ -30,9 +30,17 @@
     --ClashDisplayBold: ClashDisplay-Bold;
     --ClashDisplayVariable: ClashDisplay-Variable;
 
-    --backSoftLightImg: "url(https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2FforBack%2FsoftLightBack.png?alt=media&token=8332c707-9a62-4eb8-badd-21226ef30162)"
+    --backSoftLightImg: "url(https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2FforBack%2FsoftLightBack.png?alt=media&token=8332c707-9a62-4eb8-badd-21226ef30162)";
+
+
+    --seventhSecUserImgVar: "url(https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2FFrame%20(1).png?alt=media&token=2c8a0738-d554-4ec3-b28d-7fdd131c8458)"
+
+
 
   }
+
+
+
 
   .dark {
 
@@ -69,6 +77,10 @@
 
   .pinkBorderClass {
     /* @apply border-4 border-pink-700 */
+  }
+
+  .greenBorderClass {
+    /* @apply border-4 border-green-700 */
   }
 }
 
@@ -112,6 +124,12 @@ svg {
 }
 
 
+.seventhSecImg{
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2FFrame%20(1).png?alt=media&token=2c8a0738-d554-4ec3-b28d-7fdd131c8458");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  
+}
 
 
 /* ------------------------------------------------------------------------------ */

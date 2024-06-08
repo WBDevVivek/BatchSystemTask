@@ -9,8 +9,8 @@ type RingCompType = {
 
 const RingComp = ({ className }: RingCompType) => {
   return (
-    <div className={`z-10`} >
-      <ImgComp src={heroRingGroup} className={`${className}`} ></ImgComp>
+    <div className={`${className} w-[300px] h-[550px]  `} >
+      <ImgComp src={heroRingGroup} ></ImgComp>
     </div>
   )
 }

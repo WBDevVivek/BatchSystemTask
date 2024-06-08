@@ -2,60 +2,79 @@
 
 import React from 'react'
 import ImgComp from './smallcomp/ImgComp'
-import { BudgeIntervalsCompData, heroRightImg1, secSectionData, starImg } from '../data'
-import RingComp from './RingComp'
+import { BudgeIntervalsCompData, secSecFullImgWithRing, secSectionData } from '../data'
 import Heading from './smallcomp/Heading'
 import BudgeIntervalsComp from './BudgeIntervalsComp'
 import GradBackRedYellow from './GradBackRedYellow'
+import StarImgComp from './smallcomp/StarImgComp'
 
 const SecSec = () => {
   return (
-    <section id="#aboutus" className={` pinkBorderClass borderClass relative w-full h-lvh max-h-[600px] flex flex-row items-center justify-betweem mt-20 `} >
 
+    <>
 
-      <ImgComp src={starImg} className={` object-cover w-[50px] h-[50px] absolute top-[5%] left-[-7%] z-50`} ></ImgComp>
+      <StarImgComp className={`w-[50px] h-[50px] top-[45%]  lg:top-[45%] right-[35%] lg:left-[3%] `} />
 
+      <section id="#aboutus" className={` pinkBorderClass borderClass relative w-full h-auto lg:h-lvh lg:max-h-[600px] flex flex-col lg:flex-row items-center justify-betweem mt-20 overflow-hidden
+      gap-4 lg:gap-0 
+      pl-4
+      `} >
 
-      <div className={`w-[50%] h-full flex justify-center items-center relative scale-[0.6] lg:scale-[0.8] xl:scale-[1]`} >
+        <div className={`greenBorderClass relative h-full flex justify-center lg:justify-end items-center left-[0%]
+        origin-center sm:origin-center
 
-        <ImgComp src={heroRightImg1} className={` object-contain w-[300px] h-[500px] z-50 rotate-[15deg]  scale-[1.7] origin-left`} ></ImgComp>
+        order-2 lg:order-1
+        
+        w-full sm:w-[60%] lg:w-[50%] 
 
-        <RingComp className={`borderClass w-[300px] h-[550px] absolute top-[5%] left-[40%] rotate-[180deg] scale-[1.9] object-contain object-center`} />
+        scale-x-[1] scale-y-[1] 
+        lg:scale-x-[1.2] lg:scale-y-[1.2] 
 
-        <GradBackRedYellow className={`z-0 absolute w-[300px] top-[25%] left-[20%] rotate-[150deg] `} />
+        `} >
 
-      </div>
+          <ImgComp src={secSecFullImgWithRing} className={`greenBorderClass  z-50  w-[100%] h-[100%] scale-[1]
+              `} ></ImgComp>
 
-{/* ==================================================================================================== */}
-
-
-      <div className={`w-[50%] h-full flex flex-col justify-center items-center gap-5 scale-[0.6]  lg:scale-[0.8] xl:scale-[1]`} >
-
-        <div className={`w-full flex flex-col justify-center items-start gap-0 `} >
-
-          <Heading as="h6" className={`text-lg tracking-[8px] text-iconColor`} >{`features`}</Heading>
-          <Heading as="h1" className={`text-5xl tracking-[1px] `} >{secSectionData.heading}</Heading>
-
-        </div>
-        <div className={`flex flex-col justify-center items-center gap-4 `} >
-
-          {
-            BudgeIntervalsCompData.map((val,i) => {
-              return <BudgeIntervalsComp key={val.id} val={val} fillColor={i===0 ? true : false}/>
-            })
-          }
+          <GradBackRedYellow className={`z-0 absolute w-[250px] h-[150px] left-[20%] top-[25%] rotate-[190deg] `} />
 
         </div>
 
+        {/* =============================================================================================*/}
 
+        <div className={`greenBorderClass w-[100%] lg:w-[50%] h-[80%] flex flex-col justify-evenly items-center gap-8 sm:gap-5 order-1 lg:order-2
+        
+        scale-x-[0.95] scale-y-[0.95] 
+        xl:scale-x-[1] xl:scale-y-[1] 
+        
+        `} >
 
+          <div className={`w-full flex flex-col justify-center items-start gap-2 sm:gap-0 `} >
 
-      </div>
+            <Heading as="h6" className={`text-base sm:text-lg tracking-[8px] text-iconColor`} >{`features`}</Heading>
+            <Heading as="h1" className={`text-4xl sm:text-5xl tracking-[1px] `} >{secSectionData.heading}</Heading>
 
-      <GradBackRedYellow className={`border-4 border-blue-800 z-0 absolute w-[300px] top-[5%] right-[-2%] rounded-tl-full rounded-tr-full rotate-[270deg] `} />
+          </div>
+          <div className={`flex flex-col justify-center items-center gap-6 sm:gap-4 w-full h-[70%]`} >
 
-    </section>
+            {
+              BudgeIntervalsCompData.map((val, i) => {
+                return <BudgeIntervalsComp key={val.id} val={val} fillColor={i === 0 ? true : false} />
+              })
+            }
+
+          </div>
+
+        </div>
+
+        <GradBackRedYellow className={`border-4 border-blue-800 z-0 absolute  w-[250px] h-[150px]  top-[30%] right-[-10%] rounded-tl-full rounded-tr-full rotate-[270deg] `} />
+
+      </section>
+    </>
   )
 }
 
 export default SecSec
+
+
+
+

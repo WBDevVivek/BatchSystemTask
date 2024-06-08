@@ -11,16 +11,6 @@ import Text from './smallcomp/Text'
 import ListComp from './smallcomp/ListComp'
 
 
-
-
-// val: {
-//   id: string;
-//   heading: string;
-//   linksArray: (linksArrayType | undefined)[];
-// }
-
-
-
 export type linksArrayType = {
   id: string,
   linkName: string
@@ -39,21 +29,21 @@ type FooterListCompType = {
 const Footer = () => {
   return (
 
-    <section className={`pinkBorderClass border-blue-500 w-full h-auto xl:h-[500px] min-h-[500px] flex flex-col justify-between items-center gap-4 mt-[100px]`} >
+    <section className={`pinkBorderClass border-blue-500 w-full h-auto xl:h-[500px] min-h-[500px] flex flex-col justify-between items-center gap-8 sm:gap-4 mt-[100px]  p-4`} >
 
 
-      <div className={` w-full h-[80%] flex gap-4 justify-between items-start flex-wrap xl:flex-nowrap`} >
+      <div className={` w-full h-auto md:h-[80%] flex gap-8 sm:gap-4 justify-between items-start flex-wrap xl:flex-nowrap p-4`} >
         {/* ------------------------------------------------------------------- */}
-        <div className={`grow flex flex-col gap-6 w-[20%] min-w-[220px]`} >
+        <div className={`order-1 sm:order-1 grow flex flex-col items-center lg:items-start  gap-6 w-[20%] min-w-[220px]`} >
 
           <LogoComp className={`w-[100px] scale-[1] xl:scale-[1.3] origin-left `} />
-          <div className={`flex flex-col xl:flex-row gap-2  items-center`} >
+          <div className={` flex flex-col xl:flex-row gap-2  items-center lg:items-start`} >
 
             <IconComp className={` flex w-[20px] fill-iconColor`} >{emailIcon}</IconComp>
             <Text className={`text-lg lg:text-xl !text-btnColor`} >vivek@gmail.com</Text>
 
           </div>
-          <div className={`flex flex-col xl:flex-row gap-2 items-center`} >
+          <div className={` flex flex-col xl:flex-row gap-2 items-center lg:items-start`} >
 
             <IconComp className={` flex w-[20px] fill-iconColor`} >{phoneCallIcon}</IconComp>
             <Text className={`text-lg lg:text-xl  !text-btnColor`} >01234567</Text>
@@ -64,18 +54,19 @@ const Footer = () => {
 
         {/* ------------------------------------------------------------------- */}
 
-        <div className={`grow w-[50%] h-full flex justify-between items-start min-w-[500px]`} >
+        <div className={`order-4 sm:order-1  w-full lg:w-[50%] h-auto sm:h-full flex sm:justify-between items-center sm:items-start flex-wrap sm:flex-nowrap gap-4`} >
           {
             footerData?.map((val) => {
               return <FooterListComp key={val.id} val={val} />
             })
           }
-          {/* ------------------------------------------------------------------- */}
 
         </div>
+
+        
         {/* ------------------------------------------------------------------- */}
 
-        <div className={` grow flex flex-col w-[20%] justify-between h-[60%] min-w-[200px]`} >
+        <div className={`order-1 sm:order-1  grow flex flex-col w-full sm:w-[20%] justify-between h-[60%] min-w-[200px]`} >
         
           <Text className={`text-lg lg:text-2xl xl:text-3xl 2xl:text-3xl font-ClashDisplayMedium !text-btnColor `} >{"news letter"}</Text>
 
@@ -86,9 +77,9 @@ const Footer = () => {
         </div>
 
         {/* ------------------------------------------------------------------- */}
-        <div className={`grow flex w-[200px]  h-[60%] min-w-[200px]`} >
+        <div className={`order-1 sm:order-1 grow flex w-[200px]  h-[60%] min-w-[200px]`} >
 
-          <ButtonComp className={`btnClass w-full h-[80px] bg-btnColor text-background self-end text-xl font-ClashDisplayMedium`} >
+          <ButtonComp className={`btnClass w-full max-w-[300px] h-[80px] bg-btnColor text-background self-end text-xl font-ClashDisplayMedium`} >
 
             Subscribe
 
@@ -111,7 +102,7 @@ export default Footer
 
 export const FooterListComp = ({ val }: FooterListCompType) => {
 
-  return <div className={`flex flex-col gap-4 w-[30%]`} >
+  return <div className={`flex flex-col gap-4 w-[30%] min-w-[150px]`} >
 
     <Text className={`text-lg lg:text-2xl xl:text-3xl 2xl:text-3xl font-ClashDisplayMedium !text-btnColor `} >{val.heading}</Text>
     <ListComp listItem={val.linksArray} />

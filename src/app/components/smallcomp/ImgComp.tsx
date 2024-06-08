@@ -2,7 +2,7 @@ import { motion, Variants, MotionProps  } from "framer-motion"
 
 type ImgProps =  React.DetailedHTMLProps<React.ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement> & MotionProps &
   Partial<{
-    className: string;
+    className?: string;
     src: string;
     alt: string;
   }> ;
@@ -29,12 +29,15 @@ const ImgComp: React.FC<React.PropsWithChildren<ImgProps>> = ({
     ...restProps
   }) => {
   return (
-    <motion.img className={className} src={src} alt={alt} {...restProps} loading={"lazy"} 
+
+
+    <motion.img className={`${className} w-full h-full bg-[length:100%_100%]`} src={src} alt={alt} {...restProps} loading={"lazy"} 
     
     initial="offscreen"
     whileInView="onscreen"
     variants={ImgCompVariants}
     />
+
   )
 }
 

@@ -24,8 +24,8 @@ export const Nav = () => {
 
     return (
 
-        <div className={` border-yellow-900 borderClass w-full flex justify-between items-center`} >
-            <div className={` w-auto lg:w-[50%] borderClass h-full flex gap-4 sm:gap-10 items-center ml-10`} >
+        <div className={` border-yellow-900 borderClass w-full flex flex-grow flex-wrap gap-6 justify-between items-center`} >
+            <div className={` w-auto lg:w-[50%] borderClass h-full flex gap-4 sm:gap-10 items-center ml-0 sm:ml-10 order-2 sm:order-1`} >
                 {
                     navData?.map((val, i) => {
 
@@ -50,7 +50,7 @@ export const Nav = () => {
                 }
             </div>
 
-            <div className={`borderClass flex justify-between items-center gap-2 sm:gap-4 lg:w-[18%] mr-[0px] md:mr-[100px]`} >
+            <div className={`borderClass flex justify-between items-center gap-2 sm:gap-4 lg:w-[18%] mr-[0px] md:mr-[100px] order-1 `} >
 
                 <IconComp className={`z-100 w-[20px]  h-full cursor-pointer fill-iconColor`} onClick={() => setChangeMode && setChangeMode(!changeMode)}>
                     {!changeMode ? lightModeIcon : darkModeIcon}

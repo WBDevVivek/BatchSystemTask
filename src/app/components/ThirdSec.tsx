@@ -2,57 +2,63 @@
 
 import React from 'react'
 import ImgComp from './smallcomp/ImgComp'
-import RingComp from './RingComp'
 import Heading from './smallcomp/Heading'
-import { heroRightImg2, notificationIcon, starImg, thirdSecPrice, thirdSectionData } from '../data'
+import {  notificationIcon,  thirdSecFullImgWithRing, thirdSecPrice, thirdSectionData } from '../data'
 import Text from './smallcomp/Text'
 import IconComp from './smallcomp/IconComp'
 import GradBackRedYellow from './GradBackRedYellow'
+import StarImgComp from './smallcomp/StarImgComp'
 
 const ThirdSec = () => {
   return (
-    <section id="#aboutus" className={` pinkBorderClass borderClass relative w-full h-lvh max-h-[600px] flex flex-row items-center justify-between `} >
+    <section id="#aboutus" className={`  pinkBorderClass borderClass relative w-full h-auto lg:h-lvh lg:max-h-[600px] flex flex-col lg:flex-row items-center justify-betweem mt-20 overflow-hidden
+      gap-4 lg:gap-0 pl-4`} >
 
+      <StarImgComp className={`w-[60px] h-[60px] top-[-5%]  lg:top-[1%] right-[35%] lg:right-[3%] `} />
 
+      <div className={`w-full lg:w-[50%] h-full flex flex-col justify-center items-center gap-5`} >
 
-<ImgComp src={starImg} className={` object-cover w-[60px] h-[60px] absolute top-[5%] right-[3%] z-50`} ></ImgComp>
+        <div className={`w-full flex flex-col justify-center items-start gap-2 sm:gap-0 `} >
 
-
-      <div className={`w-[50%] h-full flex flex-col justify-center items-center gap-5`} >
-
-        <div className={`w-full flex flex-col justify-center items-start gap-0 `} >
-
-
-          <Heading as="h6" className={`text-lg tracking-[8px] text-iconColor`} >{`advantages`}</Heading>
-          <Heading as="h1" className={`text-5xl tracking-[1px] `} >{thirdSectionData.heading}</Heading>
+          <Heading as="h6" className={`text-base sm:text-lg tracking-[8px] text-iconColor`} >{`advantages`}</Heading>
+          <Heading as="h1" className={`text-4xl sm:text-5xl tracking-[1px]  `} >{thirdSectionData.heading}</Heading>
 
         </div>
 
         <div className={`w-full  flex flex-col justify-center items-start gap-4 `} >
 
-          <div className={`flex w-[400px] h-[50px] gap-3 items-center`} >
+          <div className={`flex sm:w-[400px] h-[50px] gap-3 items-center`} >
 
-            <IconComp className={`w-[50px]  h-[50px] bg-iconColor p-3 rounded-full stroke-background fill-background`} >{notificationIcon}</IconComp>
-            <Heading as="h1" className={`text-2xl tracking-[2px]  `} >{`cleaver notification`}</Heading>
+            <IconComp className={`w-[40px] sm:w-[50px]  h-[40px] sm:h-[50px] bg-iconColor p-1 sm:p-3 rounded-full stroke-background fill-background`} >{notificationIcon}</IconComp>
+
+            <Heading as="h1" className={`text-base sm:text-2xl sm:tracking-[2px]  `} >{`cleaver notification`}</Heading>
 
           </div>
 
-          <Text className={`w-[85%] py-4 text-lg font-ClashDisplayMedium`} >{thirdSectionData.para1}</Text>
+          <Text className={`w-full sm:w-[85%] py-4 text-xs sm:text-sm  font-ClashDisplayMedium`} >{thirdSectionData.para1}</Text>
 
         </div>
 
       </div>
 
-      <div className={`w-[50%] h-full flex justify-start items-center`} >
+{/* ------------------------------------------ */}
 
-        <ImgComp src={heroRightImg2} className={` object-contain w-[300px] h-[500px] z-50 rotate-[15deg] scale-[1.7] origin-left `} ></ImgComp>
 
-        <ImgComp src={thirdSecPrice} className={` object-contain w-[250px] h-auto z-50  scale-[0.9] origin-left absolute top-[40%] right-[17%] `} ></ImgComp>
+      <div className={`greenBorderClass relative h-full flex justify-center lg:justify-end items-center left-[0%]
+        origin-center xl:origin-right
 
-        <RingComp className={`borderClass w-[300px] h-[550px] absolute top-[5%] right-[19%] rotate-[180deg] scale-[1.9] object-contain object-center`} />
+        order-2 lg:order-1
+        
+          w-full sm:w-[60%] lg:w-[50%] 
 
-        <GradBackRedYellow className={`z-0 absolute w-[300px] top-[40%] right-[28%] rotate-[150deg] `} />
+        scale-x-[1] scale-y-[1] 
+        lg:scale-x-[1.2] lg:scale-y-[1.2]  `} >
 
+        <ImgComp src={thirdSecFullImgWithRing} className={`greenBorderClass  z-50  w-[100%] h-[100%] scale-[1] `} ></ImgComp>
+
+        <ImgComp src={thirdSecPrice} className={` object-contain w-[250px] h-auto z-50  scale-x-[0.4] scale-y-[0.5] origin-right absolute top-[0%] lg:top-[2%] right-[18%] `} ></ImgComp> 
+
+        <GradBackRedYellow className={`z-0 absolute  w-[250px] h-[150px] top-[40%] right-[28%] rotate-[150deg] `} />
 
       </div>
 
@@ -61,3 +67,8 @@ const ThirdSec = () => {
 }
 
 export default ThirdSec
+
+
+
+
+

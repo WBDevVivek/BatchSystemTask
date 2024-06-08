@@ -36,7 +36,10 @@ const Heading: React.FC<React.PropsWithChildren<HeadingProps>> = ({ children, as
         <motion.div 
         initial="offscreen"
             whileInView="onscreen"
-            variants={headingCompVariants}>
+            variants={headingCompVariants}
+            
+            
+            >
             <Component className={` ${className} font-ClashDisplayBold tracking-[2px]`} {...restProps}
             >
                 {children}

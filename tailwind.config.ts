@@ -1,3 +1,4 @@
+import { softLightBackImg } from "@/app/data";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -15,6 +16,9 @@ const config: Config = {
 
           'gradientColor': 'linear-gradient(0deg, #FDE598 5%, #FF0000 90%)',
           'applyOnSecColor': 'linear-gradient(180deg, #0D061F 0%, #251E35 100%)',
+
+          "backSoftLightImg" : `var(--backSoftLightImg)`,
+          "seventhSecUserImgVar" : `var(--seventhSecUserImgVar)`,
       },
 
       screens: {

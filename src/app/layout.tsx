@@ -17,10 +17,6 @@ export const metadata: Metadata = {
 };
 
 
-// const myFont = localFont({
-//   src: './fonts/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Regular.woff2',
-// })
-
 
 export default function RootLayout({
   children,
@@ -30,12 +26,12 @@ export default function RootLayout({
   return (
     <html lang="en">
 
-      <body className={`border-blue-700 pinkBorderClass  borderClass w-full max-w-[1440px] flex mx-auto justify-end items-center relative bg-background
+      <body className={` pinkBorderClass borderClass w-full max-w-[1440px] flex mx-auto justify-end items-center relative bg-background 
       `} >
 
         <BatchSystemTaskContextProvider>
           <ThemeSwitcher>
-            <div className={`border-yellow-800 pinkBorderClass max-w-[1440px] w-full  flex flex-col items-end  
+            <div className={`borderClass max-w-[1440px] w-full  flex flex-col items-end  
             `} >
 
               <Header />
@@ -46,7 +42,7 @@ export default function RootLayout({
           </ThemeSwitcher>
         </BatchSystemTaskContextProvider>
 
-        <div className={`backBackground backSoftLightImg  border-8 border-blue-900 absolute w-full h-full mix-blend-soft-light bg-blend-soft-light`}>
+        <div className={`borderClass backBackground backSoftLightImg absolute w-full h-full mix-blend-soft-light bg-blend-soft-light`}>
         </div>
 
       </body>
