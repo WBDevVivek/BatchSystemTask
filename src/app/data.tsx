@@ -1,3 +1,7 @@
+
+
+
+
 import { MdEmail } from "react-icons/md";
 import { IoCall } from "react-icons/io5";
 import { BsPlayCircle } from "react-icons/bs";
@@ -219,76 +223,139 @@ export const footerLastText = "Copyright 2022 uifry.com all rights reserved"
 
 
 
-
-
 export const budgetingIntervalsIcon1 = ""
 export const budgetingIntervalsIcon2 = ""
 
 
-
-export const logoImg = "https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2FFrame.png?alt=media&token=673495bd-a102-46d6-aa94-3f401d339c6b"
-
-export const heroRightImg1 = "https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2F1iPhone13ProFront.png?alt=media&token=3c63d787-7c47-4537-bdb0-415f329af1f8"
-
-export const heroRightImg2 = "https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2FiPhone13ProFront.png?alt=media&token=fe25a64f-8f77-46f5-91e2-f8b26828ad34"
-
-export const heroRing = "https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2FEllipse.png?alt=media&token=25fb6f0f-8782-4bb4-a355-99b441680bcd"
-export const heroRingGroup = "https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2FringGroup.png?alt=media&token=c470b04c-f116-4f5e-b69c-56aa8cb15dc5"
-
-export const heroLeftImg = "https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2FGroup35924.png?alt=media&token=900efdba-92e8-4fd7-81ed-880f85a6369f"
-
-export const creditCardImg = 'https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2FGroup.png?alt=media&token=622a3d25-ac54-4acf-97b0-fadd7a4e9e24'
-
-export const thirdSecPrice = "https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2FOnHold.png?alt=media&token=bb6a05d5-054b-475b-a5ba-f744628376d8"
-
-export const starImg = "https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2FStar.png?alt=media&token=f2a395a7-aada-4cb7-b0ca-2b77ccf7c97b"
-
-export const fifthSecLeftImg = "https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2FGroup331.png?alt=media&token=70a0c749-ee97-42ae-8622-14d7ad48c80a"
-
-export const fifthSecUserImg = "https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2FGroup35917.png?alt=media&token=6f7de808-5f86-416a-851d-85f7efa193a2"
-
-export const seventhSecUserImg = "https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2FFrame%20(1).png?alt=media&token=2c8a0738-d554-4ec3-b28d-7fdd131c8458"
+// ----------------------------------------------------------------------
 
 
+// export const logoImg = "https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2FFrame.png?alt=media&token=673495bd-a102-46d6-aa94-3f401d339c6b"
+
+// export const heroRightImg1 = "https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2F1iPhone13ProFront.png?alt=media&token=3c63d787-7c47-4537-bdb0-415f329af1f8"
+
+// export const heroRightImg2 = "https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2FiPhone13ProFront.png?alt=media&token=fe25a64f-8f77-46f5-91e2-f8b26828ad34"
+
+// export const heroRing = "https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2FEllipse.png?alt=media&token=25fb6f0f-8782-4bb4-a355-99b441680bcd"
+
+// export const heroRingGroup = "https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2FringGroup.png?alt=media&token=c470b04c-f116-4f5e-b69c-56aa8cb15dc5"
+
+// export const heroLeftImg = "https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2FGroup35924.png?alt=media&token=900efdba-92e8-4fd7-81ed-880f85a6369f"
+
+// export const creditCardImg = 'https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2FGroup.png?alt=media&token=622a3d25-ac54-4acf-97b0-fadd7a4e9e24'
+
+// export const thirdSecPrice = "https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2FOnHold.png?alt=media&token=bb6a05d5-054b-475b-a5ba-f744628376d8"
+
+// export const starImg = "https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2FStar.png?alt=media&token=f2a395a7-aada-4cb7-b0ca-2b77ccf7c97b"
+
+// export const fifthSecLeftImg = "https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2FGroup331.png?alt=media&token=70a0c749-ee97-42ae-8622-14d7ad48c80a"
+
+// export const fifthSecUserImg = "https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2FGroup35917.png?alt=media&token=6f7de808-5f86-416a-851d-85f7efa193a2"
+
+// export const seventhSecUserImg = "https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2FFrame%20(1).png?alt=media&token=2c8a0738-d554-4ec3-b28d-7fdd131c8458"
 
 
 
 // ----------------------------------------------------------------------
 
 
+// export const softLightBackImg = "https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2FforBack%2FsoftLightBack.png?alt=media&token=8332c707-9a62-4eb8-badd-21226ef30162";
 
-export const softLightBackImg = "https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2FforBack%2FsoftLightBack.png?alt=media&token=8332c707-9a62-4eb8-badd-21226ef30162";
+// export const backWithImg = "https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2FforBack%2FbackWithImg.png?alt=media&token=58695d9b-c018-4e62-ab8d-0607a38f595f";
 
-export const backWithImg = "https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2FforBack%2FbackWithImg.png?alt=media&token=58695d9b-c018-4e62-ab8d-0607a38f595f";
+// export const backWithOutImg = "https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2FforBack%2FbackWithOutImg.png?alt=media&token=f09be5da-44eb-4f9e-a740-82b49baa5451";
 
-export const backWithOutImg = "https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2FforBack%2FbackWithOutImg.png?alt=media&token=f09be5da-44eb-4f9e-a740-82b49baa5451";
+// export const forHeroLeftBlur = "https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2FforBack%2FforHeroLeftBlur.png?alt=media&token=6cdacf8f-d6a4-44e5-911e-4fa0dc05eba8";
 
-export const forHeroLeftBlur = "https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2FforBack%2FforHeroLeftBlur.png?alt=media&token=6cdacf8f-d6a4-44e5-911e-4fa0dc05eba8";
+// export const forHeroRightBlur = "https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2FforBack%2FforHeroRightBlur.png?alt=media&token=6bcc8764-c75c-4a8e-868c-e0c1b4e4e902";
 
-export const forHeroRightBlur = "https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2FforBack%2FforHeroRightBlur.png?alt=media&token=6bcc8764-c75c-4a8e-868c-e0c1b4e4e902";
+// export const forSecLeftBlur = "https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2FforBack%2FforSecLeftBlur.png?alt=media&token=2e82cc56-fff0-4803-99d9-ae4aa20e7b3f";
 
-export const forSecLeftBlur = "https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2FforBack%2FforSecLeftBlur.png?alt=media&token=2e82cc56-fff0-4803-99d9-ae4aa20e7b3f";
+// export const forSecoRightBlur = "https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2FforBack%2FforSecoRightBlur.png?alt=media&token=4c4cd7cb-a4b2-4dfe-a7be-4be90e93e84a";
 
-export const forSecoRightBlur = "https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2FforBack%2FforSecoRightBlur.png?alt=media&token=4c4cd7cb-a4b2-4dfe-a7be-4be90e93e84a";
+// export const forThirdRightBlur = "https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2FforBack%2FforThirdRightBlur.png?alt=media&token=830efe43-f3e4-45e3-8e1b-4ee04969d723";
 
-export const forThirdRightBlur = "https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2FforBack%2FforThirdRightBlur.png?alt=media&token=830efe43-f3e4-45e3-8e1b-4ee04969d723";
-
-export const forForthLeftBlur = "https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2FforBack%2FforForthLeftBlur.png?alt=media&token=704e8280-1924-4e52-ba59-9733e9704fea";
+// export const forForthLeftBlur = "https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2FforBack%2FforForthLeftBlur.png?alt=media&token=704e8280-1924-4e52-ba59-9733e9704fea";
 
 
 // ----------------------------------------------------------------------
 
 
-export const secSecFullImgWithRing = "https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2FimagesWithRing%2FGroup%2035934.png?alt=media&token=58fc8961-01e2-46dd-9961-c052a9da8e4b";
+// export const secSecFullImgWithRing = "https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2FimagesWithRing%2FGroup%2035934.png?alt=media&token=58fc8961-01e2-46dd-9961-c052a9da8e4b";
+
+// export const thirdSecFullImgWithRing = "https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2FimagesWithRing%2FGroup%2035936.png?alt=media&token=7a1979fc-326c-4015-ae90-0be8b711faf6";
+
+// export const forthSecFullImgWithRing = "https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2FimagesWithRing%2FGroup%201000002335.png?alt=media&token=756fc235-111d-4fd6-8c08-ad26d74ae27a";
+
+// export const fifthSecFullImgWithRing = "https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2FimagesWithRing%2FGroup%201000002334.png?alt=media&token=56539b73-d882-4084-8e35-fdc6b0729b1f";
 
 
-export const thirdSecFullImgWithRing = "https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2FimagesWithRing%2FGroup%2035936.png?alt=media&token=7a1979fc-326c-4015-ae90-0be8b711faf6";
+// ----------------------------------------------------------------------
 
 
-export const forthSecFullImgWithRing = "https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2FimagesWithRing%2FGroup%201000002335.png?alt=media&token=756fc235-111d-4fd6-8c08-ad26d74ae27a";
+
+export const logoImg = '/img/Frame.png';
+
+export const heroRightImg1 = '/img/1iPhone13ProFront.png';
+
+export const heroRightImg2 = '/img/iPhone13ProFront.png';
+
+export const heroRing =  '/img/Ellipse.png';
+
+export const heroRingGroup = '/img/ringGroup.png';
+
+export const heroLeftImg =  '/img/Group35924.png';
+
+export const creditCardImg =  '/img/Group.png';
+
+export const thirdSecPrice = '/img/OnHold.png';
+
+export const starImg = '/img/Star.png';
+
+export const fifthSecLeftImg =  '/img/Group331.png';
+
+export const fifthSecUserImg =  '/img/Group35917.png';
+
+export const seventhSecUserImg =  '/img/Frame1.png';
 
 
-export const fifthSecFullImgWithRing = "https://firebasestorage.googleapis.com/v0/b/forimgsave.appspot.com/o/010624_BatchSystem_SanFranciscoUS%2FimagesWithRing%2FGroup%201000002334.png?alt=media&token=56539b73-d882-4084-8e35-fdc6b0729b1f";
+// ----------------------------------------------------------------------
+
+
+
+export const softLightBackImg =  '/img/forBacksoftLightBack.png';
+
+export const backWithImg =  '/img/forBackbackWithImg.png';
+
+export const backWithOutImg =  '/img/forBackbackWithOutImg.png';
+
+export const forHeroLeftBlur =  '/img/forBackforHeroLeftBlur.png';
+
+export const forHeroRightBlur =  '/img/forBackforHeroRightBlur.png';
+
+export const forSecLeftBlur =  '/img/forBackforSecLeftBlur.png';
+
+export const forSecoRightBlur =  '/img/forBackforSecoRightBlur.png';
+
+export const forThirdRightBlur =  '/img/forBackforThirdRightBlur.png';
+
+export const forForthLeftBlur =  '/img/forBackforForthLeftBlur.png';
+
+
+// ----------------------------------------------------------------------
+
+
+export const secSecFullImgWithRing = '/img/imagesWithRingGroup2035934.png';
+
+export const thirdSecFullImgWithRing = '/img/imagesWithRingGroup2035936.png';
+
+export const forthSecFullImgWithRing = '/img/imagesWithRingGroup201000002335.png';
+
+export const fifthSecFullImgWithRing = '/img/imagesWithRingGroup201000002334.png';
+
+
+
+
 
 // ----------------------------------------------------------------------
 
