@@ -12,11 +12,12 @@ export const BatchSystemTaskAppStates = createContext<BatchSystemTaskStatesType 
 
 export const BatchSystemTaskContextProvider: React.FC<BatchSystemTaskContextProviderPropsType> = ({ children }) => {
 
-
     const [selectNav, setSelectNav] = useState("01")
     const [bgNav, setBgNav] = useState("bg-transparent")
     const [changeMode, setChangeMode] = useState(false);
 
+
+    useEffect(() => {
 
     function scrollFun() {
 
@@ -25,11 +26,7 @@ export const BatchSystemTaskContextProvider: React.FC<BatchSystemTaskContextProv
         } else {
             setBgNav("bg-transparent")
         }
-
     }
-
-
-    useEffect(() => {
 
         window.addEventListener("scroll", scrollFun);
 
@@ -37,11 +34,9 @@ export const BatchSystemTaskContextProvider: React.FC<BatchSystemTaskContextProv
             window.removeEventListener("scroll", scrollFun);
         };
 
-    }, [scrollFun])
+    }, [])
 
 
-
-    
     return (
         <BatchSystemTaskAppStates.Provider
             value={{
