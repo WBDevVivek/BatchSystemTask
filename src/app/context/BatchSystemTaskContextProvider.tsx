@@ -37,7 +37,7 @@ const memoScrollFun = useCallback(function scrollFun() {
             window.removeEventListener("scroll", memoScrollFun);
         };
 
-    }, [])
+    }, [memoScrollFun])
 
 
     return (
