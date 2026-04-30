@@ -17,21 +17,24 @@ export const BatchSystemTaskContextProvider: React.FC<BatchSystemTaskContextProv
     const [changeMode, setChangeMode] = useState(false);
 
 
-    useEffect(() => {
 
-    const scrollFun = () => {
+const memoScrollFun = useCallback(function scrollFun() {
 
         if (window.scrollY > 50) {
             setBgNav("fixed")
         } else {
             setBgNav("bg-transparent")
         }
-    }
+    },[])
 
-        window.addEventListener("scroll", scrollFun);
+
+
+    useEffect(() => {
+
+        window.addEventListener("scroll", memoScrollFun);
 
         return () => {
-            window.removeEventListener("scroll", scrollFun);
+            window.removeEventListener("scroll", memoScrollFun);
         };
 
     }, [])
