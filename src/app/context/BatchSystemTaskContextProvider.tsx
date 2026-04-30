@@ -19,7 +19,7 @@ export const BatchSystemTaskContextProvider: React.FC<BatchSystemTaskContextProv
 
     useEffect(() => {
 
-    function scrollFun() {
+    const scrollFun = () => {
 
         if (window.scrollY > 50) {
             setBgNav("fixed")
